@@ -55,11 +55,15 @@
             },
             methods: {
                 addTask() {
-                    this.tasks.push({
-                        text: this.todo,
-                        checked: false
+                    if(this.todo != ''){
+                        this.tasks.push({
+                            text: this.todo,
+                            checked: false
 
-                    });
+                        });                        
+                    }
+                    else alert('enter your task')
+
                     this.todo = '';
                 },
                 deleteToDo(index) {
