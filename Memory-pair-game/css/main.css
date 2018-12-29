@@ -22,6 +22,14 @@ body {
   transition: .5s ease;
   transform: translateY(0);
 }
+
+@media screen and (max-width: 549px) {
+  .game-container {
+    width: 320px;
+    height: 320px;
+  }
+}
+
 .game-container.hidden {
   transform: translateY(-1500px);
 }
@@ -35,6 +43,13 @@ body {
   position: relative;
   transition:  .25s ease;
   transform-style: preserve-3d;
+}
+@media screen and (max-width: 549px) {
+  .card {
+    width: calc(25% - 5px);
+    height: calc(25% - 5px);
+    margin: 2.5px;
+  }
 }
 
 .card:hover {
@@ -65,11 +80,16 @@ body {
   height: 100%;
   backface-visibility: hidden;
 }
+
+@media screen and (max-width: 549px) {
+  .front-part, .back-part {
+    padding: 5px;
+}
+}
 .front-part {
   background-image: url('../img/texture-2.png');
   border-radius: 10px;
   background-size: cover;
-  z-index: -1;
 }
 
 .back-part {
