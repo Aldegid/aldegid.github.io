@@ -54,10 +54,10 @@
 							<h3 class="form__main-h3">your order</h3>
 							<table class="order__table-body">
 								<tr class="order__table-tr">
-									<th class="order__table-th">ITEMS</th>
-									<th class="order__table-th">DETAILS</th>
-									<th class="order__table-th">PRICE</th>
-									<th class="order__table-th">DELIVERY</th>
+									<th class="order__table-th text-uppercase">Items</th>
+									<th class="order__table-th text-uppercase">Details</th>
+									<th class="order__table-th text-uppercase">Price</th>
+									<th class="order__table-th text-uppercase">Delivery</th>
 								</tr>
 								<tr class="order__table-tr">
 									<td class="order__table-td">2 documents</td>
@@ -76,7 +76,7 @@
 
 						<div class="help__center">
 							<span class="fa fa-life-ring" aria-hidden="true"></span>
-							<h3 class="help__center-h3">HELP CENTER</h3>
+							<h3 class="help__center-h3 text-uppercase">Help center</h3>
 							<p class="help__center-p">If you need assistance while placing your order, contact one of our beloved Project Manager by phone or
 								email.</p>
 							<div class="contacts">
@@ -89,7 +89,7 @@
 
 				<div class="form__body">
 					<section class="translate">
-						<h2 class="translate-h2">SELECT WHAT YOU WANT TO TRANSLATE</h2>
+						<h2 class="translate-h2 text-uppercase">Select what you want to translate</h2>
 						<div class="translate__wrapper">
 							<label class="label label--size-translate">
 								<input type="radio" name="translate" id="website" value="website"
@@ -140,10 +140,10 @@
 						<div class="upload__table">
 							<table class="upload__table-body">
 								<tr>
-									<th>FILE NAME</th>
-									<th>FILE SIZE</th>
-									<th>NUMBER OF WORDS</th>
-									<th>REMOVE</th>
+									<th class="text-uppercase">File name</th>
+									<th class="text-uppercase">File size</th>
+									<th class="text-uppercase">Number of words</th>
+									<th class="text-uppercase">Remove</th>
 								</tr>
 								<tr>
 									<td><i class="fa fa-file-text" aria-hidden="true"></i><span
@@ -189,7 +189,7 @@
 							</div>
 							<div class="select__wrapper-more">
 								<div class="select__wrapper">
-									<select name="languange" id="select-to-2" class="select__item select__item-more" required>
+									<select name="languange" id="select-to-2" class="select__item select__item-more">
 										<option value="english">English</option>
 										<option value="arabic">Arabic</option>
 										<option value="kurdish">Kurdish</option>
@@ -257,18 +257,18 @@
 										class="range__input">
 								</div>
 								<div class="range__text">
-									<span>I GOT TIME</span>
-									<span class="orange">AVERAGE</span>
-									<span>YESTERDAY</span>
+									<span class="text-uppercase">I got time</span>
+									<span class="orange text-uppercase">Average</span>
+									<span class="text-uppercase">Yesterday</span>
 								</div>
 							</div>
 
 							<div class="timeline__info">
 								<div class="timeline__info-title">
 									<i class="fa fa-info-circle" aria-hidden="true"></i>
-									<h3 class="timeline__info-h3">TIMELINE INFO</h3>
+									<h3 class="timeline__info-h3 text-uppercase">Timeline info</h3>
 								</div>
-								<p class="timeline__info-p">With an <span>AVERAGE</span> timeline set up, our expert translator can take a reasonable amount of
+								<p class="timeline__info-p">With an <span class="text-uppercase">Average</span> timeline set up, our expert translator can take a reasonable amount of
 									time perfecting you translation</p>
 							</div>
 						</div>
@@ -287,7 +287,7 @@
 						</div>
 						<div class="sign-up__inputs">
 							<div class="sign-up__item sign-up__name">
-								<p>FULL NAME</p>
+								<p class="text-uppercase">Full name</p>
 								<input
 									type="text"
 									name="fullname"
@@ -300,7 +300,7 @@
 								<span class="validation" aria-hidden="true"></span>
 							</div>
 							<div class="sign-up__item">
-								<p>EMAIL ADRESS</p>
+								<p class="text-uppercase">Email adress</p>
 								<input
 									type="email"
 									name="email"
@@ -313,7 +313,7 @@
 									<span class="validation" aria-hidden="true"></span>
 							</div>
 							<div class="sign-up__item sign-up__mail">
-								<p>CHOOSE A PASSWORD</p>
+								<p class="text-uppercase">Choose a password</p>
 								<input
 									type="password"
 									name="password"
@@ -358,7 +358,7 @@
 						</div>
 						<div class="credit__card">
 							<div class="credit__card-item">
-								<label for="cardNumber">CARD NUMBER</label>
+								<label for="cardNumber" class="text-uppercase">Card number</label>
 								<input
 									type="tel"
 									name="card-number"
@@ -372,21 +372,21 @@
 								<i class="fa fa-cc-visa" aria-hidden="true"></i>
 							</div>
 							<div class="credit__card-item">
-								<label for="cardExpires">EXPIRY DATE</label>
+								<label for="cardExpires" class="text-uppercase">Expiry date</label>
 								<input
-									type="tel"
 									name="credit-expires"
 									id="cardExpires"
-									pattern="\d*"
-									title="enter card expires date in format: MM  YY"
-									min="6"
-									maxlength="6"
-									placeholder="MM  YY"
+									type="text"
+									pattern="(?:0[1-9]|1[0-2])/[0-9]{2}"
+									title="enter card expires date in format: MM/YY"
+									minlength="5"
+									maxlength="5"
+									placeholder="MM/YY"
 									class="input__auth input__card-expires"
 									required>
 							</div>
 							<div class="credit__card-item">
-								<label for="cardCode">CODE</label>
+								<label for="cardCode" class="text-uppercase">code</label>
 								<input
 									type="password"
 									name="credit-code"
@@ -404,7 +404,7 @@
 					<section class="form__footer">
 						<div class="accept__terms">
 							<input type="checkbox" name="accept-terms" id="accept-terms" class="form__footer-accept" required>
-							<label for="accept-terms">
+							<label for="accept-terms" class="accept__terms-label">
 								I agree to the
 								<a href="#" class="accept__terms-link">Terms & Conditions</a>
 							</label>
